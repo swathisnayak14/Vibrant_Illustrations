@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,6 +144,7 @@
             
         </div>
     </section>
+
     <script type="text/javascript">
         window.addEventListener('scroll', function(){
         const header=document.querySelector('header');
@@ -169,129 +169,8 @@
     });
     return false; 
     });
+
+
 </script>
-
-<!-- landscape gallery -->
-
-<section class="ldgallery">
-    <div class="ldmenu">
-        <ul>
-            <li class="active" data-filter="*">ALL</li>
-            <li data-filter=".mandala">MANDALA</li>
-            <li data-filter=".zentagles">ZENTANGLES</li>
-            <li data-filter=".portraits">PORTRAITS</li>
-            <li data-filter="digital">DIGITAL</li>
-            <li data-filter=".canvas">CANVAS</li>
-            <li data-filter=".paintings">PAINTINGS</li>
-        </ul>
-    </div>
-    <div class="lditems">
-        <div class="item mandala">
-            <img src="portrait/Eleven.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/Sixteen.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/ThirtySix.jpg" width="350" height="450">
-        </div>
-        <div class="item paintings">
-            <img src="portrait/Thirteen.jpg" width="350" height="450" >
-        </div>
-
-        <div class="item mandala">
-            <img src="portrait/Four.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/Eight.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/ThirtyFive.jpg" width="350" height="450">
-        </div>
-        <div class="item paintings">
-            <img src="portrait/Nine.jpg" width="350" height="450" class="images">
-        </div>
-
-        <div class="item mandala">
-            <img src="portrait/Fourteen.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/Three.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/ThirtySeven.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item paintings">
-            <img src="portrait/TwentyEight.jpg" width="350" height="450" class="images">
-        </div>
-
-        <div class="item mandala">
-            <img src="portrait/Thirty.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/TwentySeven.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/Fifteen.jpg" width="350" height="450" class="images">
-        </div>
-        
-        <div class="item mandala">
-            <img src="portrait/Seventeen.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/Ten.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/Seven.jpg" width="350" height="450" class="images">
-        </div>
-
-        
-        <div class="item mandala">
-            <img src="portrait/Twelve.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/ThirtyEight.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/ThirtyNine.jpg" width="350" height="450" class="images">
-        </div>
-    
-        <div class="item mandala">
-            <img src="portrait/Two.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/Five.jpg" width="350" height="450" class="images">
-        </div>
-
-        <div class="item mandala">
-            <img src="portrait/TwentyFour.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item zentagles">
-            <img src="portrait/ThirtyEight.jpg" width="350" height="450" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="portrait/ThirtyNine.jpg" width="350" height="450" class="images">
-        </div>
-    </div>   
-</section>
-
-<script type="text/javascript">
-    $('.portfolio-items').isotope({
-  // options
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
-    $('.portfolio-menu ul li').click(function(){
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
-
-     var selector=$(this).attr('data-filter');
-    $('.portfolio-items').isotope({
-        filter:selector
-    });
-    return false; 
-    });
-</script>
-
 </body>
 </html>
