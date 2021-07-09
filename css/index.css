@@ -118,3 +118,155 @@ p{
         margin-bottom: -4rem;
     }
 }
+
+.btn{
+    font-size: 2rem ;
+    text-decoration: none;
+    color: #000000;
+    background: #ff0157;
+    padding: 0.8rem 2.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+    transition: .5s;
+    animation: anime 1s 1;
+}
+
+.btn:hover{
+    letter-spacing: 0.6rem;
+    color: #fff;
+}
+
+@keyframes anime {
+    0%{
+        color: black;
+        margin-bottom: -2rem;
+    }
+    30%{
+        letter-spacing: 0.4rem;
+        margin-bottom: -2rem;
+    }
+    85%{
+        letter-spacing: .3rem;
+        margin-bottom: -2rem;
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 10rem;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: rgb(2, 40, 73);
+    padding: 1rem 10rem;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: wheat;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header.sticky .logo{
+    color: rgb(231, 227, 227);
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 3rem;
+    /* border: .1rem solid pink; */
+}
+
+header .navigation li a{
+    position: relative;
+    text-decoration: none;
+    color: wheat;
+    font-weight: 300;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+header.sticky .navigation li a{
+   color: rgb(231, 227, 227);
+}
+
+header .navigation li a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: .3rem;
+    background-color: #f36d9a;
+    transition: all 0.3s linear;
+    
+}
+
+header .navigation li a:hover:before{
+    width: 100%;
+    background-color: #910161;
+  
+}
+
+header.sticky .navigation li a:hover{
+    color: #ff0157;
+
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 100%;
+    background: rgba(0,0,0,0.05);
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 100%;
+    background: rgb(2, 52, 95);
+    z-index: 10000;
+    animation: animate 5s linear infinite;
+}
+
+/* @keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+} */
