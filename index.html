@@ -145,3 +145,32 @@
             
         </div>
     </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+        const header=document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY > 0);
+       });
+   </script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+    $('.portfolio-items').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+    $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+     var selector=$(this).attr('data-filter');
+    $('.portfolio-items').isotope({
+        filter:selector
+    });
+    return false; 
+    });
+
+
+</script>
+</body>
+</html>
