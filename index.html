@@ -169,8 +169,153 @@
     });
     return false; 
     });
+</script>
 
+<!-- landscape gallery -->
 
+<section class="ldgallery">
+    <div class="ldmenu">
+        <ul>
+            <li class="active" data-filter="*">ALL</li>
+            <li data-filter=".mandala">MANDALA</li>
+            <li data-filter=".zentagles">ZENTANGLES</li>
+            <li data-filter=".portraits">PORTRAITS</li>
+            <li data-filter="digital">DIGITAL</li>
+            <li data-filter=".canvas">CANVAS</li>
+            <li data-filter=".paintings">PAINTINGS</li>
+        </ul>
+    </div>
+    <div class="lditems">
+        <div class="item mandala">
+            <img src="landscape/TwentyThree.jpg" width="500" height="400" class="images">
+        </div>
+        <!-- <div class="item zentagles">
+            <img src="portrait/Sixteen.jpg" width="500" height="400" class="images">
+        </div> -->
+        <div class="item portraits">
+            <img src="landscape/ThirtyFour.jpg" width="500" height="400">
+        </div>
+        <div class="item digital">
+            <img src="landscape/Eighteen.jpg" width="500" height="400" >
+        </div>
+        <div class="item canvas">
+            <img src="landscape/One.jpg" width="500" height="400" >
+        </div>
+        <div class="item paintings">
+            <img src="landscape/ThirtyOne.jpg" width="500" height="400" >
+        </div>
+
+        <!-- <div class="item zentagles">
+            <img src="landscape/Eight.jpg" width="480" height="400" class="images">
+        </div> -->
+        <div class="item portraits">
+            <img src="landscape/Nineteen.jpg" width="500" height="400">
+        </div>
+        <div class="item digital">
+            <img src="landscape/TwentyFive.jpg" width="500" height="400" >
+        </div>
+        <div class="item canvas">
+            <img src="landscape/ThirtyTwo.jpg" width="500" height="400" >
+        </div>
+        <div class="item paintings">
+            <img src="landscape/TwentyNine.jpg" width="500" height="400" class="images">
+        </div>
+
+        <!-- <div class="item mandala">
+            <img src="portrait/Fourteen.jpg" width="480" height="400" class="images">
+        </div>
+        <div class="item zentagles">
+            <img src="portrait/Three.jpg" width="480" height="400" class="images">
+        </div>
+        <div class="item portraits">
+            <img src="portrait/ThirtySeven.jpg" width="480" height="400" class="images">
+        </div> -->
+        <div class="item digital">
+            <img src="landscape/Six.jpg" width="500" height="400" >
+        </div>
+        <div class="item canvas">
+            <img src="landscape/TwentyTwo.jpg" width="500" height="400" >
+        </div>
+        <!-- <div class="item paintings">
+            <img src="portrait/TwentyEight.jpg" width="480" height="400" class="images">
+        </div> -->
+
+        <!-- <div class="item zentagles">
+            <img src="portrait/TwentySeven.jpg" width="480" height="400" class="images">
+        </div> 
+        <div class="item portraits">
+            <img src="portrait/Fifteen.jpg" width="480" height="400" class="images">
+        </div> -->
+        <div class="item digital">
+            <img src="landscape/TwentyOne.jpg" width="500" height="400" >
+        </div>
+    
+        
+        <!-- <div class="item mandala">
+            <img src="portrait/Seventeen.jpg" width="480" height="400" class="images">
+        </div> -->
+        <!-- <div class="item zentagles">
+            <img src="portrait/Ten.jpg" width="480" height="400" class="images">
+        </div>
+        <div class="item portraits">
+            <img src="portrait/Seven.jpg" width="480" height="400" class="images">
+        </div> -->
+        <div class="item digital">
+            <img src="landscape/ThirtyThree.jpg" width="500" height="400" >
+        </div>
+
+        
+        <!-- <div class="item mandala">
+            <img src="portrait/Twelve.jpg" width="480" height="400" class="images">
+        </div> -->
+        <!-- <div class="item zentagles">
+            <img src="portrait/ThirtyEight.jpg" width="480" height="400" class="images">
+        </div>
+        <div class="item portraits">
+            <img src="portrait/ThirtyNine.jpg" width="480" height="400" class="images">
+        </div> -->
+        <div class="item digital">
+            <img src="landscape/Twenty.jpg" width="500" height="400" >
+        </div>
+    
+        <!-- <div class="item mandala">
+            <img src="portrait/Two.jpg" width="480" height="350" class="images">
+        </div>
+        <div class="item zentagles">
+            <img src="portrait/Five.jpg" width="480" height="350" class="images">
+        </div> -->
+
+        <!-- <div class="item mandala">
+            <img src="portrait/TwentyFour.jpg" width="480" height="350" class="images">
+        </div>
+        <div class="item zentagles">
+            <img src="portrait/ThirtyEight.jpg" width="480" height="350" class="images">
+        </div>
+        <div class="item portraits">
+            <img src="portrait/ThirtyNine.jpg" width="480" height="350" class="images">
+        </div> -->
+        
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+    $('.lditems').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+    $('.ldmenu ul li').click(function(){
+    $('.ld ul li').removeClass('active');
+    $(this).addClass('active');
+
+     var selector=$(this).attr('data-filter');
+    $('.lditems').isotope({
+        filter:selector
+    });
+    return false; 
+    });
 </script>
 </body>
 </html>
