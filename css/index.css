@@ -30,3 +30,91 @@ p{
     background-size:cover;
     display: flex;
 }
+
+/* img{
+    position: absolute;
+    background-size:cover;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4));
+
+} */
+
+.banner .content{
+    max-width: 90rem;
+    text-align: center;
+    display: block;
+}
+
+.banner .content span{
+    color: wheat;
+}
+.banner .content .text1{
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+    color:wheat;
+    animation: text 3s 1;
+}
+
+.banner .content .text2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    color: wheat;
+    letter-spacing: 0.4rem;
+    animation: texts 3s 1;
+}
+
+.banner .content .text3{
+    font-size: 2.5rem;
+    margin: 2rem;
+    letter-spacing: 0.3rem;
+    animation: texting 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -4rem;
+    }
+    30%{
+        letter-spacing: 1.2rem;
+        margin-bottom: -4rem;
+    }
+    85%{
+        letter-spacing: .8rem;
+        margin-bottom: -4rem;
+    }
+}
+
+@keyframes texts {
+    0%{
+        color: black;
+        margin-bottom: -4rem;
+    }
+    30%{
+        letter-spacing: 0.5rem;
+        margin-bottom: -4rem;
+    }
+    85%{
+        letter-spacing: .4rem;
+        margin-bottom: -4rem;
+    }
+}
+
+@keyframes texting {
+    0%{
+        color: black;
+        margin-bottom: -4rem;
+    }
+    30%{
+        letter-spacing: 0.4rem;
+        margin-bottom: -4rem;
+    }
+    85%{
+        letter-spacing: .3rem;
+        margin-bottom: -4rem;
+    }
+}
