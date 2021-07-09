@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bona Nova', serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+ min-height: 100rem;
+}
+
+p{
+    font-weight: 500;
+    color: wheat;
+
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url('/images/bg.jpg');
+    background-size:cover;
+    display: flex;
+}
