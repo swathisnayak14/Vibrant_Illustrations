@@ -303,17 +303,18 @@ header.sticky .navigation li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:rgb(10, 10, 10);
+    /* background:rgb(10, 10, 10); */
     font-size: 2.5rem;
-    color: rgb(231, 227, 227);
+    color: #111;
     letter-spacing: 0.6rem;
+    font-weight: 400;
 }
 
-/* .titleText .color{
+.titleText span{
     color: #ff0157;
-    font-size: 2.5rem;
-    font-weight: 700;
-} */
+    font-size: 6rem;
+    font-weight: 900;
+}
 
 
 .portfolio-menu{
@@ -375,7 +376,7 @@ header.sticky .navigation li a:hover{
 
 
 .ldgallery{
-    padding: 20rem;
+    padding: 8rem 20rem;
 }
 
 .ldgallery{
@@ -421,4 +422,70 @@ header.sticky .navigation li a:hover{
     border-radius: 1rem;
     /* padding: 2rem; */
 
+}
+
+section{
+    padding: 10rem;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 88%;
+   
+}
+
+.heading{
+    color: #111;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.heading span{
+    color: #ff0157;
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.me{
+    color: #ff0157;
+    letter-spacing: .1rem;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.row .col50 .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgbox img{
+    position: relative;
+    top: 12rem;
+    left: 8rem;
+    width: auto;
+    height: 40rem;
+    /* padding: 10rem 10rem;     */
+}
+
+p{
+    font-size: 1.7rem;
+    color: #111;
+    font-weight:600;
+    width: 80rem;
+}
+
+.cards{
+    color: #ff0157;
+}
+
+.cards:hover{
+    color:rgb(2, 52, 95);
 }
