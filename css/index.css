@@ -482,10 +482,13 @@ p{
     width: 80rem;
 }
 
+
+
 .cards{
-    color: #ff0157;
+    color:#ff0157;
 }
 
-.cards:hover{
-    color:rgb(2, 52, 95);
+.card1 , .card2{
+    color: rgb(131, 1, 81);
+    cursor: pointer;
 }
