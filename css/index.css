@@ -425,6 +425,16 @@ header.sticky .navigation li a:hover{
 
 }
 
+.detail{
+    font-size: 1.5rem;
+    padding: 3rem;
+    letter-spacing: .1rem;
+    color: rgb(167, 165, 165);
+}
+
+
+
+
 section{
     padding: 10rem;
 }
