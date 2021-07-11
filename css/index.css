@@ -56,25 +56,26 @@ p{
     font-size: 5rem;
     letter-spacing: 0.8rem;
     color:wheat;
-    animation: text 3s 1;
+    /* animation: text 3s 1; */
 }
 
 .banner .content .text2{
     font-size: 2rem;
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     color: wheat;
     letter-spacing: 0.4rem;
-    animation: texts 3s 1;
+    /* animation: texts 3s 1; */
 }
 
 .banner .content .text3{
     font-size: 2.5rem;
-    margin: 2rem;
+    /* margin: 2rem; */
     letter-spacing: 0.3rem;
-    animation: texting 3s 1;
+    color: wheat;
+    /* animation: texting 3s 1; */
 }
 
-@keyframes text {
+/* @keyframes text {
     0%{
         color: black;
         margin-bottom: -4rem;
@@ -117,7 +118,7 @@ p{
         letter-spacing: .3rem;
         margin-bottom: -4rem;
     }
-}
+} */
 
 .btn{
     font-size: 2rem ;
