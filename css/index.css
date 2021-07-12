@@ -502,43 +502,36 @@ p{
 }
 
 footer{
-    position: relative;
+    position:relative;
+    bottom: 0rem;
     width: 100%;
-    height: auto;
-    padding: 5rem 10rem;
     background: #111;
-    display:flex;
+    /* height: auto; */
+    /* padding: 5rem 10rem; */
+    /* display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 footer .container{
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row; */
 }
 
-footer .container .sec{
-    margin-right: 3rem;
+.container .sec{
+    flex-basis: 50%;
+    padding: 1rem 2rem;
 }
 
-footer .container .sec.info{
-    width: 40%;
+.sec h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
 }
-
-footer .container .sec.quicklinks{
-    width: 40%;
-}
-
-footer .container .sec.quicklinks h2{
-    position: relative;
-    color:#999;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-footer .container h2:before{
+.sec h2:before{
     content: '';
     position: absolute;
     bottom: -.5rem;
@@ -548,42 +541,39 @@ footer .container h2:before{
     background:#ff0157;
 }
 
-.end{
+.sec .details{
+    margin: 2rem 0 0 0;
+}
+
+.info .details p{
+    text-align: justify;
     color: #999;
-    width: 50rem;
 }
 
-.sci{
-    margin-top: 2rem;
-    display: flex;
+.info .details .social{
+    margin: 2rem 0 0 0;
 }
 
-.sci li{
-    list-style: none;
+.info .details .social a{
+    padding: 0 .2rem;
 }
 
-.sci li a{
-    display: inline-block;
-    width: 4rem;
+.info .details .social a .icon .fa{
     height: 4rem;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    text-decoration: none;
-    border-radius: .4rem;
-}
-
-.sci li a:hover{
-    background: #ff014d;
-}
-
-.sci li a .fa{
+    width: 4rem;
+    background: #1a1a1a;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: .5rem;
     color: #999;
-    font-size: 2rem;
+    transition: .3s;
 }
 
-.sci li a .fa:hover{
+.info .details .social a .icon .fa:hover{
+    background:#ff0157;
+}
+
+.info .details .social a .icon .fa:hover{
     color: #fff;
 }
