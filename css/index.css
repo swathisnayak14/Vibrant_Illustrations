@@ -531,7 +531,7 @@ footer .container{
     text-transform: uppercase;
     color: #999;
 }
-.sec h2:before{
+/* .sec h2:before{
     content: '';
     position: absolute;
     bottom: -.5rem;
@@ -539,7 +539,7 @@ footer .container{
     width: 5rem;
     height: .2rem;
     background:#ff0157;
-}
+} */
 
 .sec .details{
     margin: 2rem 0 0 0;
