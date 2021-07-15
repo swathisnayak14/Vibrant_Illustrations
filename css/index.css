@@ -26,15 +26,17 @@ html{
     html {
       font-size: 60%;
     }
-    header {
-        padding: 4rem 30rem 0rem 10rem;
+    header .navigation{
+        padding: 4rem 20rem 4rem 10rem;
     }
-    
   }
   
   @media(max-width: 768px) {
     html {
-      font-size: 35%;
+      font-size: 40%;
+    }
+    header .navigation{
+        padding: 4rem 20rem 4rem 20rem;
     }
   }
   
@@ -42,11 +44,25 @@ html{
     html {
       font-size: 25.0%;
     }
+    header .navigation li a{
+        display: none;
+     }
+    .imgheader{
+         width: 20%; 
+         height: 20%;
+     }
   }
   
   @media(max-width: 390px) {
     html {
-      font-size: 21.5%;
+      font-size: 25%;
+    }
+    header .navigation li a{
+       display: none;
+    }
+    .imgheader{
+        width: 20%; 
+        height: 20%;
     }
   }
   
