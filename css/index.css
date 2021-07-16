@@ -120,9 +120,9 @@
         width: 99%;
         height:auto;
     }
-    /* .ldgallery {
-        padding: 5rem 8rem;
-      } */
+    .ldgallery {
+        padding: 5rem 5.55rem;
+      }
     .lditems .item img{
         width:95%;
         height:auto;
@@ -170,7 +170,7 @@
       padding: 8rem 3rem 3rem 3rem;
     }
     .ldgallery {
-        padding: 8rem 20rem;
+        padding: 8rem 1rem;
       }
       .lditems .item img{
         width:95%;
