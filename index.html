@@ -17,6 +17,7 @@
     <!-- <img src="images/bg.jpg" alt="me"> -->
     <header>
         <img src="images/logo.png" class="imgheader" height="100" width="180" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
             <li><a href="#banner">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -174,6 +175,12 @@
         window.addEventListener('scroll', function(){
         const header=document.querySelector('header');
         header.classList.toggle("sticky",window.scrollY > 0);
+
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            menuToggle.classList.toggle('active');
+        }
        });
    </script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

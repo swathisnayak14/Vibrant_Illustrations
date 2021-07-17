@@ -47,11 +47,38 @@
         width:95%;
         height:auto;
     }
+    header .navigation li a {
+      display: none;
+    }
+    .menuToggle{
+      position: absolute;
+      top: 4rem;
+      right: 6rem;
+      height: 4rem;
+      width: 4rem;
+      background: url("/images/bar2.png");
+      justify-content: right;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      background-position: center;
+      cursor: pointer;
+    }
+    .menuToggle.active{
+      background: url("/images/close.jpg");
+      background-repeat: no-repeat;
+      background-size: 2rem;
+      background-position: center;
+      background: chocolate;
+  
+    }
   }
   
   @media (max-width: 1200px) {
     html {
       font-size: 60%;
+    }
+    header .navigation li a {
+      display: none;
     }
     header .navigation {
       padding: 4rem 2rem 4rem 8rem;
@@ -62,15 +89,36 @@
     .gallery {
       padding: 8rem 6rem 6rem 12rem;
     }
-    .portfolio-items .item {
-        padding: 10rem;
-    }
+    /* .portfolio-items img {
+        padding: 1rem;
+    } */
     .ldgallery {
-        padding: 8rem 20rem;
+        padding: 8rem 1rem;
     }
     .lditems .item img{
-        width:95%;
+        width:60%;
         height:auto;
+    }
+    .menuToggle{
+      position: absolute;
+      top: 4rem;
+      right: 6rem;
+      height: 6rem;
+      width: 6rem;
+      background: url("/images/bar2.png");
+      justify-content: right;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      background-position: center;
+      cursor: pointer;
+    }
+    .menuToggle.active{
+      background: url("/images/close.png");
+      justify-content: right;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      background-position: center;
+  
     }
   }
   
@@ -79,22 +127,22 @@
       font-size: 40%;
     }
     header .navigation {
-      padding: 4rem 20rem 4rem 20rem;
+      padding: 4rem 2rem 4rem 20rem;
     }
     footer {
       height: 35rem;
     }
     .gallery {
-      padding: 1rem 10rem;
+      padding: 8rem 2rem 8rem 1rem;
     }
-    .portfolio-items .item {
-        padding: 1.8rem;
-    }
+    /* .portfolio-items .item {
+        padding: 3rem;
+    } */
     .ldgallery {
-        padding: 8rem 20rem;
+        padding: 5rem 16rem;
     }
     .lditems .item img{
-        width:95%;
+        width:100%;
         height:auto;
       }
   }
@@ -114,12 +162,12 @@
       height: 50rem;
     }
     .gallery {
-      padding: 8rem;
+      padding: 8rem 4rem 9rem 6rem;
     }
-    .portfolio-items img{
+    /* .portfolio-items .item img{
         width: 99%;
         height:auto;
-    }
+    } */
     .ldgallery {
         padding: 5rem 5.55rem;
       }
@@ -144,10 +192,10 @@
       height: 50rem;
     }
     .gallery {
-      padding: 2rem;
+      padding: 8rem 4rem 3rem 3rem;
     }
     .portfolio-items img{
-        width: 100%;
+        width: 97%;
         height:auto;
     }
     .ldgallery {
@@ -167,10 +215,14 @@
       height: 50rem;
     }
     .gallery {
-      padding: 8rem 3rem 3rem 3rem;
+      padding: 8rem 5rem 9rem 3rem;
+    }
+    .portfolio-items img{
+        width: 100%;
+        height:auto;
     }
     .ldgallery {
-        padding: 8rem 1rem;
+        padding: 5rem 1rem;
       }
       .lditems .item img{
         width:95%;
@@ -523,8 +575,8 @@
   .portfolio-items .item {
     padding: 1.5rem;
     float: left;
-    /* width: auto; */
-    /* height: 500rem; */
+    /* width: auto;
+    height: 500rem; */
   }
   
   .portfolio-items .item img {
@@ -566,7 +618,7 @@
   }
   
   .lditems .item {
-    padding: 1.5rem;
+    padding: 3rem;
     float: left;
     /* width: auto; */
     /* height: 500rem; */
@@ -625,6 +677,7 @@
     position: relative;
     width: 70%;
     height: 100%;
+    /* background: #999; */
   }
   
   .row .col50 .imgbox img {
@@ -640,7 +693,9 @@
     font-size: 1.7rem;
     color: #111;
     font-weight: 600;
-    width: 89rem;
+    width: 89rem; 
+    /* background: #910161; */
+
   }
   
   .cards {
