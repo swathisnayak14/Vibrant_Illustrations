@@ -15,17 +15,9 @@
 </head>
 <body onresize="location.reload();">
     <!-- <img src="images/bg.jpg" alt="me"> -->
-    <header>
-        <img src="images/logo.png" class="imgheader" height="100" width="180" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+    <!-- <header>
+        <img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
         <div class="menuToggle" onclick="toggleMenu();"></div>
-        <!-- <ul class="mainmenu">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <div class="closemenu"><i class="fa fa-times" aria-hidden="true"></i></div>
-        </ul> -->
         <ul class="navigation" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
             <li><a href="#banner">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -33,7 +25,25 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </header>
+    </header> -->
+    <div class="navbar">
+        <div class="navinfo">
+            <div class="logo"><img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"></div>
+            <ul class="menu-list" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+                <div class="bar cancel-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="bar menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </div>
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
     <!-- <script>
@@ -179,7 +189,7 @@
         </div>
     </section>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.addEventListener('scroll', function(){
         const header=document.querySelector('header');
         header.classList.toggle("sticky",window.scrollY > 0);
@@ -194,7 +204,7 @@
         //     image.src="images/close2.png"
         // }
        });
-   </script>
+   </script> -->
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
@@ -389,6 +399,19 @@
     }
 </script> -->
 
+<script>
+    const menu=document.querySelector(".menu-list");
+    const menuBtn=document.querySelector(".menu-btn");
+    const cancelBtn=document.querySelector(".cancel-btn");
+    menuBtn.onclick=()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick=()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+    }
+</script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

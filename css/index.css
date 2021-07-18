@@ -42,36 +42,32 @@
     }
     .ldgallery {
         padding: 8rem 2rem;
+        /* background: #910161; */
     }
     .lditems .item img{
         width:40%;
         height:auto;
+      }
+      .navbar .menu-list{
+        display: inline-flex;
+      }
+      .menu-list li a{
+        color: wheat;
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-left: 2.5rem;
+        transition: all .3s ease;
+       } 
+       
+      /* .bar.cancel-btn{
+        display: none;
+      }
+      
+      .bar.menu-btn{
+        display: none;
+        }  */
     }
-    header .navigation li{
-      display: none;
-    }
-    .menuToggle{
-      position: absolute;
-      top: 4rem;
-      right: 6rem;
-      height: 4rem;
-      width: 4rem;
-      background: url("/images/bar2.png");
-      justify-content: right;
-      background-repeat: no-repeat;
-      background-size: 5rem;
-      background-position: center;
-      cursor: pointer;
-    }
-    .menuToggle.active{
-      background: url("/images/close2.png");
-      background-repeat: no-repeat;
-      background-size: 5rem;
-      background-position: center;
-      background: chocolate;
-  
-    }
-  }
   
   @media (max-width: 1200px) {
     html {
@@ -99,27 +95,6 @@
         width:60%;
         height:auto;
     }
-    .menuToggle{
-      position: absolute;
-      top: 4rem;
-      right: 6rem;
-      height: 6rem;
-      width: 6rem;
-      background: url("/images/bar2.png");
-      justify-content: right;
-      background-repeat: no-repeat;
-      background-size: 5rem;
-      background-position: center;
-      cursor: pointer;
-    }
-    .menuToggle.active{
-      background: url("/images/close.png");
-      justify-content: right;
-      background-repeat: no-repeat;
-      background-size: 5rem;
-      background-position: center;
-  
-    }
   }
   
   @media (max-width: 768px) {
@@ -144,6 +119,48 @@
     .lditems .item img{
         width:100%;
         height:auto;
+      }
+      .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background:rgb(2, 52, 95);
+        height: 100vh;
+        width: 100%;
+        max-width: 40rem;
+        display:block;
+        padding: 4rem 0rem;
+        text-align: center;
+        transition: all .3s ease;
+      }
+      .navbar .menu-list.active{
+        left: 0%;
+      }
+        .navbar .menu-list li{
+          margin-top: 10rem;
+        }
+      .navbar .menu-list li a{
+        font-size: 5rem;
+        transition: all .3s ease;
+      }
+      .navbar .navinfo li a:hover {
+        color: #ff0157;
+      }
+      .bar{
+        color: #fff;
+        font-size: 5rem;
+        cursor: pointer;
+      }
+      .bar.hide{
+        display: none;
+      }
+      .bar.cancel-btn{
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+      }
+      .bar.menu-btn{
+        margin-right: 4rem;
       }
   }
   
@@ -175,6 +192,46 @@
         width:95%;
         height:auto;
       }
+      .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background:rgb(2, 52, 95);
+        height: 100vh;
+        width: 100%;
+        max-width: 40rem;
+        display:block;
+        padding: 4rem 0rem;
+        text-align: center;
+        transition: all .3s ease;
+      }
+      .navbar .menu-list.active{
+        left: 0%;
+      }
+        .navbar .menu-list li{
+          margin-top: 10rem;
+        }
+      .navbar .menu-list li a{
+        font-size: 5rem;
+        transition: all .3s ease;
+      }
+      .navbar .navinfo li a:hover {
+        color: #ff0157;
+      }
+      .bar{
+        color: #fff;
+        font-size: 5rem;
+        cursor: pointer;
+      }
+      .bar.hide{
+        display: none;
+      }
+      
+      .bar.cancel-btn{
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+      }
   }
   
   @media (max-width: 390px) {
@@ -204,6 +261,52 @@
     .lditems .item img{
         width:95%;
         height:auto;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background:rgb(2, 52, 95);
+      height: 100vh;
+      width: 100%;
+      max-width: 40rem;
+      display:block;
+      padding: 4rem 0rem;
+      text-align: center;
+      transition: all .3s ease;
+    }
+    .navbar .menu-list.active{
+      left: 0%;
+    }
+      .navbar .menu-list li{
+        margin-top: 10rem;
+        box-shadow: 0 0 0.4rem .3rem rgb(2, 68, 126);
+        padding: 2rem 0rem;
+      }
+    .navbar .menu-list li a{
+      font-size: 5rem;
+      transition: all .3s ease;
+    }
+    .navbar .navinfo li a:hover {
+      color: #ff0157;
+    
+    }
+    .bar{
+      color: #fff;
+      font-size: 5rem;
+      cursor: pointer;
+    }
+    .bar.hide{
+      display: none;
+    }
+    
+    .bar.cancel-btn{
+      position: absolute;
+      right: 3rem;
+      top: 2rem;
+    }
+    .bar.menu-btn{
+      margin-right: 4rem;
     }
   }
   
@@ -377,12 +480,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 10rem;
+    padding: 1rem 10rem;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    background: rgb(2, 40, 73);
   }
   
   header.sticky {
@@ -409,6 +513,7 @@
   header .navigation {
     position: relative;
     display: flex;
+
   }
   
   header .navigation li {
@@ -891,3 +996,48 @@ hr.style-one {
     font-size: 1.5rem;
 }
   
+
+/* navbar-styling */
+.navinfo{
+  max-width: 125rem;
+  margin: auto;
+  padding: 0rem 0.8rem;
+}
+
+.navbar{
+  background: rgb(2, 52, 95);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.navbar .navinfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar .navinfo li a:hover {
+  color: #ff0157;
+}
+
+/* .navbar .navinfo li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0%;
+  height: 0.3rem;
+  background-color: #f36d9a;
+  transition: all 0.3s linear;
+  z-index: 10000;
+}
+
+.navbar .navinfo li a:hover:before {
+  width: 100%;
+  background-color: #910161;
+  z-index: 1;
+} */
+
+
