@@ -41,13 +41,13 @@
       padding: 12rem 18rem 10rem 18rem;
     }
     .ldgallery {
-        padding: 8rem 20rem;
+        padding: 8rem 2rem;
     }
     .lditems .item img{
-        width:95%;
+        width:40%;
         height:auto;
     }
-    header .navigation li a {
+    header .navigation li{
       display: none;
     }
     .menuToggle{
@@ -64,9 +64,9 @@
       cursor: pointer;
     }
     .menuToggle.active{
-      background: url("/images/close.jpg");
+      background: url("/images/close2.png");
       background-repeat: no-repeat;
-      background-size: 2rem;
+      background-size: 5rem;
       background-position: center;
       background: chocolate;
   
@@ -77,9 +77,9 @@
     html {
       font-size: 60%;
     }
-    header .navigation li a {
+    /* header .navigation li a {
       display: none;
-    }
+    } */
     header .navigation {
       padding: 4rem 2rem 4rem 8rem;
     }
