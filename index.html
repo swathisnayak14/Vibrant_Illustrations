@@ -235,6 +235,24 @@
     });
 </script>
 
+<script type="text/javascript">
+    $('.lditems').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+    $('.ldmenu ul li').click(function(){
+    $('.ldmenu ul li').removeClass('active');
+    $(this).addClass('active');
+
+     var selector=$(this).attr('data-filter');
+    $('.lditems').isotope({
+        filter:selector
+    });
+    return false; 
+    });
+</script>
+
 
 <!-- landscape gallery -->
 <hr class="style-one"> 
@@ -309,24 +327,6 @@
         </div>
     </div>
 </section>
-
-    <script type="text/javascript">
-    $('.lditems').isotope({
-  // options
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
-    $('.ldmenu ul li').click(function(){
-    $('.ldmenu ul li').removeClass('active');
-    $(this).addClass('active');
-
-     var selector=$(this).attr('data-filter');
-    $('.lditems').isotope({
-        filter:selector
-    });
-    return false; 
-    });
-</script>
 
 
 <!-- videos-section -->
