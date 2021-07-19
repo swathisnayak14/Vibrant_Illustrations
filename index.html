@@ -235,24 +235,6 @@
     });
 </script>
 
-<script type="text/javascript">
-    $('.lditems').isotope({
-  // options
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
-    $('.ldmenu ul li').click(function(){
-    $('.ldmenu ul li').removeClass('active');
-    $(this).addClass('active');
-
-     var selector=$(this).attr('data-filter');
-    $('.lditems').isotope({
-        filter:selector
-    });
-    return false; 
-    });
-</script>
-
 
 <!-- landscape gallery -->
 <hr class="style-one"> 
@@ -327,6 +309,25 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    $('.lditems').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+    $('.ldmenu ul li').click(function(){
+    $('.ldmenu ul li').removeClass('active');
+    $(this).addClass('active');
+
+     var selector=$(this).attr('data-filter');
+    $('.lditems').isotope({
+        filter:selector
+    });
+    return false; 
+    });
+</script>  
+<!-- this neesd to be fixed -->
+
 
 
 <!-- videos-section -->
@@ -353,7 +354,7 @@
         </div>
         <div class="col50">
             <div class="imgbox">
-                <img src="images/Swathi.jpg">
+                <!-- <img src="images/Swathi.jpg"> -->
             </div>
         </div>
     </div>
