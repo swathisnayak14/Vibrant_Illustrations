@@ -74,19 +74,19 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 40%;
+    font-size: 43%;
   }
   footer {
     height: 35rem;
   }
   .gallery {
-    padding: 8rem 2rem 8rem 1rem;
+    padding: 8rem 1rem 8rem 1rem;
   }
   /* .portfolio-items .item {
         padding: 3rem;
     } */
   .ldgallery {
-    padding: 5rem 16rem;
+    padding: 5rem 12rem;
   }
   .lditems .item img {
     width: 100%;
@@ -224,7 +224,7 @@ nav .icon-burger {
 nav .icon-burger .line {
   width: 30px;
   height: 5px;
-  background-color: #000;
+  background-color: #fff;
   margin: 5px;
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
