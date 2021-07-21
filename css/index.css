@@ -490,6 +490,10 @@ p {
   filter: blur(0.6rem);
 }
 
+.videos{
+  padding:10rem;
+}
+
 .title {
   width: 100%;
   display: flex;
@@ -511,6 +515,22 @@ p {
   color: #ff0157;
   font-size: 6rem;
   font-weight: 900;
+}
+
+.iframe-container1,.iframe-container2,.iframe-container3,.iframe-container4,.iframe-container5 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.iframe-container1 iframe,.iframe-container2 iframe,.iframe-container3 iframe,.iframe-container4 iframe.iframe-container5 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* margin: 4rem; */
 }
 
 .portfolio-menu {
