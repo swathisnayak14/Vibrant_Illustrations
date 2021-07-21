@@ -524,13 +524,13 @@ p {
   height: 0;
 }
 
-.iframe-container1 iframe,.iframe-container2 iframe,.iframe-container3 iframe,.iframe-container4 iframe.iframe-container5 iframe{
+.iframe-container1 iframe,.iframe-container2 iframe,.iframe-container3 iframe,.iframe-container4 iframe,.iframe-container5 iframe{
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* margin: 4rem; */
+  padding: 2rem;
 }
 
 .portfolio-menu {
@@ -888,15 +888,20 @@ hr.style-one:after {
 
 .copyright {
   width: 100%;
-  background: #181818;
+  background: rgb(32, 32, 32);
   padding: 0.8rem 10rem;
   text-align: center;
 }
 
 .copyright p {
-  color: #999;
+  color: #ff0157;
   font-size: 1.5rem;
 }
+
+.copyright .footer-name{
+  color: #fff;
+}
+
 
 nav .links li a:hover {
   color: #ff0157;
