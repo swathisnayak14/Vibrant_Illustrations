@@ -590,7 +590,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.ldgallery ul li {
+.ldmenu ul li {
   text-decoration: none;
   display: inline-block;
   margin: 7rem 0rem;
@@ -603,13 +603,13 @@ p {
   text-align: center;
 }
 
-.ldgallery ul li:hover {
+.ldmenu ul li:hover {
   color: white;
   background: #ff0157;
   border-radius: 0.8rem;
 }
 
-.ldgallery ul li.active {
+.ldmenu ul li.active {
   color: white;
   background: #ff0157;
   border-radius: 0.8rem;
