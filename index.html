@@ -14,18 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
 </head>
 <body onresize="location.reload();">
-    <!-- <img src="images/bg.jpg" alt="me"> -->
-    <!-- <header>
-        <img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header> -->
     <nav>
         <input id="nav-toggle" type="checkbox">
         <a href="/"><div class="logo"><img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"></div></a>
@@ -42,28 +30,8 @@
             <div class="line"></div>
         </label>
     </nav>
-    <!-- <div class="navbar">
-        <div class="navinfo">
-            <div class="logo"><img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"></div>
-            <ul class="menu-list" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div> -->
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
-    <!-- <script>
-    Let progress = document.getElementById('progressbar');
-    Let totalHeight = document.body.scrollHeight-window.innerHeight;
-    window.onscroll=function(){
-    Let progressHeight = (window.pageYOffset/totalHeight)*100;
-    progress.style.height = progressHeight + "%";
-    }
-    </script> -->
     <section class="banner" id="banner">
         <div class="content">
             <h3 class="text1" data-aos="fade-right" data-aos-offset="100" data-aos-delay="100">VIBRANT ILLUSTRATIONS</h3><br><br>
@@ -193,28 +161,10 @@
             </div>
             <div class="item zentagles">
                 <img src="portrait/Five.jpg" width="350" height="450" class="images">
-            </div>
-
-
+            </div>            
         </div>
     </section>
-
-    <!-- <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-        const header=document.querySelector('header');
-        header.classList.toggle("sticky",window.scrollY > 0);
-
-
-        function toggleMenu(){
-            const menuToggle = document.querySelector('.menuToggle');
-            menuToggle.classList.toggle('active');
-        }
-        // function change(){
-        //     var image=document.getElementById('social');
-        //     image.src="images/close2.png"
-        // }
-       });
-   </script> -->
+    
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
@@ -251,7 +201,8 @@
             <li data-filter=".3d">3D-ART</li>
         </ul>
     </div>
-    <div class="lditems">
+    <div class="lditems" >
+        
         <div class="item mandala">
             <img src="landscape/TwentyThree.jpg" width="500" height="400" class="images">
         </div>
@@ -270,7 +221,6 @@
         <div class="item 3d">
             <img src="landscape/TwentySix.jpg" width="500" height="400" >
         </div>
-        
 
         <div class="item portraits">
             <img src="landscape/Nineteen.jpg" width="500" height="400">
@@ -417,15 +367,6 @@
 <div class="copyright">
     <p>Copyright © 2021 <span class="footer-name">Swathi S Nayak</span> . All Rights Reserved</p>
 </div>
-
-<!-- <script type="text/javascript">
-    function setNewImage()
-    {
-        document.getElementById("img1").src="certificates/img1.png";
-    }
-    function setText(){
-    }
-</script> -->
 
 <script>
     const menu=document.querySelector(".menu-list");
