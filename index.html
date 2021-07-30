@@ -14,6 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
 </head>
 <body onresize="location.reload();">
+    <!-- <script>
+        var refresh=setInterval(myrefresh, 5000);
+        function myrefresh(){
+            window.location.reload();
+        }
+        clearInterval(refresh);
+    </script> -->
     <nav>
         <input id="nav-toggle" type="checkbox">
         <a href="/"><div class="logo"><img src="images/logo.png" class="imgheader" height="70" width="90" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"></div></a>
@@ -42,8 +49,7 @@
         </div>
     </section>
 
-    <!-- portrait gallery -->
-
+   
 
     <section class="gallery" id="gallery">
         <div class="title">
@@ -56,10 +62,12 @@
                 <li data-filter=".zentagles">ZENTANGLES</li>
                 <li data-filter=".portraits">PORTRAITS</li>
                 <li data-filter=".digital">DIGITAL</li>
-                <!-- <li data-filter=".canvas">CANVAS</li> -->
+                <li data-filter=".canvas">CANVAS</li>
                 <li data-filter=".paintings">PAINTINGS</li>
+                <li data-filter=".3d">3D-ART</li>
             </ul>
         </div>  
+         <!-- portrait gallery -->
         <div class="portfolio-items">
             <div class="item mandala">
                 <img src="portrait/Eleven.jpg" width="350" height="450" class="images">
@@ -161,7 +169,63 @@
             </div>
             <div class="item zentagles">
                 <img src="portrait/Five.jpg" width="350" height="450" class="images">
-            </div>            
+            </div> 
+            
+            <!-- landscape-gallery -->
+            <div class="item mandala">
+                <img src="landscape/TwentyThree.jpg" width="350" height="300">
+            </div>
+            <div class="item portraits">
+                <img src="landscape/ThirtyFour.jpg" width="350" height="300">
+            </div>
+            <div class="item digital">
+                <img src="landscape/Eighteen.jpg" width="350" height="300" >
+            </div>
+            <div class="item canvas">
+                <img src="landscape/One.jpg" width="350" height="300" >
+            </div>
+            <div class="item paintings">
+                <img src="landscape/ThirtyOne.jpg" width="350" height="300" >
+            </div>
+            <div class="item 3d">
+                <img src="landscape/TwentySix.jpg" width="350" height="300" >
+            </div>
+
+            <div class="item portraits">
+                <img src="landscape/Nineteen.jpg" width="350" height="300">
+            </div>
+            <div class="item digital">
+                <img src="landscape/TwentyFive.jpg" width="350" height="300" >
+            </div>
+            <div class="item canvas">
+                <img src="landscape/ThirtyTwo.jpg" width="350" height="300" >
+            </div>
+            <div class="item paintings">
+                <img src="landscape/TwentyNine.jpg" width="350" height="300">
+            </div>
+    
+            <div class="item digital">
+                <img src="landscape/Six.jpg" width="350" height="300" >
+            </div>
+            <div class="item canvas">
+                <img src="landscape/TwentyTwo.jpg" width="350" height="300" >
+            </div>
+    
+            <div class="item portraits">
+                <img src="landscape/FortyOne.jpg" width="350" height="300" >
+            </div>
+            <div class="item digital">
+                <img src="landscape/TwentyOne.jpg" width="350" height="300" >
+            </div>
+        
+            <div class="item digital">
+                <img src="landscape/ThirtyThree.jpg" width="350" height="300" >
+            </div>
+    
+            
+            <div class="item digital">
+                <img src="landscape/Twenty.jpg" width="350" height="300" >
+            </div>
         </div>
     </section>
     
@@ -184,101 +248,6 @@
     return false; 
     });
 </script>
-
-
-<!-- landscape gallery -->
-<hr class="style-one"> 
-<section class="ldgallery">
-    <div class="ldmenu">
-        <ul>
-            <li class="active" data-filter="*">ALL</li>
-            <li data-filter=".mandala">MANDALA</li>
-            <!-- <li data-filter=".zentagles">ZENTANGLES</li> -->
-            <li data-filter=".portraits">PORTRAITS</li>
-            <li data-filter=".digital">DIGITAL</li>
-            <li data-filter=".canvas">CANVAS</li>
-            <li data-filter=".paintings">PAINTINGS</li>
-            <li data-filter=".3d">3D-ART</li>
-        </ul>
-    </div>
-    <div class="lditems" >
-        
-        <div class="item mandala">
-            <img src="landscape/TwentyThree.jpg" width="500" height="400" class="images">
-        </div>
-        <div class="item portraits">
-            <img src="landscape/ThirtyFour.jpg" width="500" height="400">
-        </div>
-        <div class="item digital">
-            <img src="landscape/Eighteen.jpg" width="500" height="400" >
-        </div>
-        <div class="item canvas">
-            <img src="landscape/One.jpg" width="500" height="400" >
-        </div>
-        <div class="item paintings">
-            <img src="landscape/ThirtyOne.jpg" width="500" height="400" >
-        </div>
-        <div class="item 3d">
-            <img src="landscape/TwentySix.jpg" width="500" height="400" >
-        </div>
-
-        <div class="item portraits">
-            <img src="landscape/Nineteen.jpg" width="500" height="400">
-        </div>
-        <div class="item digital">
-            <img src="landscape/TwentyFive.jpg" width="500" height="400" >
-        </div>
-        <div class="item canvas">
-            <img src="landscape/ThirtyTwo.jpg" width="500" height="400" >
-        </div>
-        <div class="item paintings">
-            <img src="landscape/TwentyNine.jpg" width="500" height="400" class="images">
-        </div>
-
-        <div class="item digital">
-            <img src="landscape/Six.jpg" width="500" height="400" >
-        </div>
-        <div class="item canvas">
-            <img src="landscape/TwentyTwo.jpg" width="500" height="400" >
-        </div>
-
-        <div class="item portraits">
-            <img src="landscape/FortyOne.jpg" width="500" height="400" class="images">
-        </div>
-        <div class="item digital">
-            <img src="landscape/TwentyOne.jpg" width="500" height="400" >
-        </div>
-    
-        <div class="item digital">
-            <img src="landscape/ThirtyThree.jpg" width="500" height="400" >
-        </div>
-
-        
-        <div class="item digital">
-            <img src="landscape/Twenty.jpg" width="500" height="400" >
-        </div>
-    </div>
-</section>
-<script type="text/javascript">
-    $('.lditems').isotope({
-  // options
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
-    $('.ldmenu ul li').click(function(){
-    $('.ldmenu ul li').removeClass('active');
-    $(this).addClass('active');
-
-     var selector=$(this).attr('data-filter');
-    $('.lditems').isotope({
-        filter:selector
-    });
-    return false; 
-    });
-</script>  
-<!-- this neesd to be fixed -->
-
-
 
 <!-- videos-section -->
 
