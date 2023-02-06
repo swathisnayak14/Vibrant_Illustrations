@@ -98,7 +98,7 @@
     font-family: "Montserrat", sans-serif;
     padding: 0 5%;
     height: 100px;
-    background: rgb(2, 52, 95);
+    background: #170c42;
   }
   nav .logo {
     float: left;
@@ -170,7 +170,7 @@
       height: auto;
       flex-direction: column;
       justify-content: space-evenly;
-      background-color: rgba(2, 52, 95, 0.8);
+      background-color: #170c42;
       overflow: hidden;
       box-sizing: border-box;
       transition: all 0.5s ease-in-out;
@@ -196,7 +196,7 @@
   }
   
   nav .links li a:hover {
-    color: #ff0157;
+    color: #ea0b81;
   }
   
   ::-webkit-scrollbar {
@@ -218,7 +218,7 @@
     right: 0;
     width: 1rem;
     height: 100%;
-    background: rgb(2, 52, 95);
+    background: #170c42;
     z-index: 10000;
     animation: animate 5s linear infinite;
   }
@@ -229,7 +229,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(2, 52, 95);
+    background: #170c42;
     filter: blur(0.6rem);
   }
   
@@ -240,7 +240,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(2, 52, 95);
+    background: #170c42;
     filter: blur(0.6rem);
   }
   
@@ -303,14 +303,14 @@
   }
   
   .heading {
-    color: #ff0157;
+    color: #ea0b81;
     font-size: 8rem;
     font-weight: 700;
     /* letter-spacing: 1rem; */
   }
   
   .heading span {
-    color: #ff0157;
+    color: #ea0b81;
     font-size: 7rem;
     font-weight: 900;
   }
